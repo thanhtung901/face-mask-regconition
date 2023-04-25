@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Recognition</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+
+            <h2 class="mt-5">IOT SMART KEY</h2>
+			<form method="post" action="{{ url_for('tasks') }}">
+                <input type="submit" value="Predict" name="face" />
+<!--                <input type="text" name = "names" />-->
+                <input type="submit" value="Add" name="rec" />
+                <input type="submit" value="train" name="train" />
+			</form>
+            <img src="{{ url_for('video_feed') }}" height="50%">
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
